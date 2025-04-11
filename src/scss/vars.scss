@@ -1,0 +1,20 @@
+:root {
+    // main colors
+    --black: #00000F;
+    --white: #FBFFFF;
+    --darkblue: #002A54;
+    --lightblue: #8AA8FF;
+    --orange: #FF9800;
+
+    --container-padding: 15px;
+    --container-width: 1200px;
+    @include mini-desktop {
+      --container-width: 1000px;
+    }
+    @include tablet {
+      --container-width: 860px;
+    }
+    @include mobile {
+      --container-width: 480px;
+    }
+  }
