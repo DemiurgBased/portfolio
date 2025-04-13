@@ -5,4 +5,4 @@ async function loadHTML(url, elementId) {
 }
 
 loadHTML('./html/components/header', 'header');
-// loadHTML('./html/sections/hero.html', 'hero');
+loadHTML('./html/sections/hero.html', 'hero');
