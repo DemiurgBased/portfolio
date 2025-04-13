@@ -1,8 +1,3 @@
-async function loadHTML(url, elementId) {
-    const response = await fetch(url);
-    const html = await response.text();
-    document.getElementById(elementId).innerHTML = html;
-}
+import { UseLoad } from './components/load.js';
+UseLoad();
 
-loadHTML('./html/components/header', 'header');
-loadHTML('./html/sections/hero.html', 'hero');
