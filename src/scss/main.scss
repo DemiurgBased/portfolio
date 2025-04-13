@@ -1,5 +1,8 @@
 @import './mixins/media.scss';
-@import './vars.scss';
 @import './general.scss';
+@import './vars.scss';
 @import '../assets/fonts/fonts.css';
-
+@import './components/header.scss';
+@import '../assets/reset.css';
+@import './globals/button.scss';
+@import './sections/hero.scss';

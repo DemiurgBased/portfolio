@@ -1,0 +1,39 @@
+.hero {
+  background-color: var(--black);
+    position: relative;
+  &_inner {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 160%;
+  }
+  &_subtitle {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+  }
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: var(--white);
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.right {
+    width: 550px;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+
