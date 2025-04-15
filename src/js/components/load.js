@@ -5,7 +5,7 @@ export const UseLoad = () => {
         document.getElementById(elementId).innerHTML = html;
     }
     
-    loadHTML ('./html/components/header.html', 'header');
+    // loadHTML ('./html/components/header.html', 'header');
     loadHTML ('./html/sections/hero.html', 'hero');
     loadHTML ('./html/sections/about.html', 'about');
     loadHTML ('./html/sections/profit.html', 'profit');
