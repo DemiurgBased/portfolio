@@ -1,0 +1,129 @@
+.trainers {
+    margin-top: 100px;
+    &__title {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 140%;
+        color: var(--black);
+        margin-bottom: 60px;
+        @include tablet {
+            text-align: center;
+            font-size: 34px;
+        }
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+    &__slider {
+        @include tablet {
+            width: 630px;
+        }
+        @include small-tablet {
+            width: 550px;
+        }
+        @include mobile {
+            width: 360px;
+        }
+        @include small-mobile {
+            width: 330px;
+        }
+        &-nav {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            margin-top: 40px;
+        }
+        &-wrapper {
+        }
+        &-slide {
+            @include tablet {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 295px;
+                
+            }
+            @include small-tablet {
+                width: 255px;
+            }
+            @include mobile {
+                width: 360px;
+            }
+            @include small-mobile {
+                width: 330px;
+            }
+            
+        }
+        &-image {
+            text-align: center;
+            width: 273px;
+            @include tablet {
+                width: 295px;
+            }
+            @include small-tablet {
+                width: 255px;
+            }
+            @include mobile {
+                width: 360px;
+            }
+            @include small-mobile {
+                width: 330px;
+            }
+        }
+        &-text {
+            text-align: center;
+            &--name {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 160%;
+                color: var(--black);
+                margin-top: 20px; 
+                // @include tablet {
+                //     margin-top: 40px;
+                // }
+            }
+            &--job {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                opacity: 0.7;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            &--more {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: var(--red);
+            }
+        }
+        &-image img {
+            max-width: 100%;
+        }
+    }
+}
+
+.swiper-scrollbar {
+    width: 50% !important;
+    height: 5px !important;
+    position: unset !important;
+    background: #b4b4b4 !important;
+}
+.swiper-scrollbar-drag {
+    background-color: var(--black) !important;
+    width: 260px !important;
+    height: 5px !important;
+    @include tablet {
+        width: 121px !important;
+    }
+    @include small-tablet {
+        width: 106px !important;
+    }
+    @include mobile {
+        width: 35px !important;
+    }
+    @include small-mobile {
+        width: 32px !important;
+    }
+}

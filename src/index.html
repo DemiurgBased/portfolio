@@ -1,43 +1,190 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="../scss/main.scss">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header start -->
     <header class="header">
-      <div class="container">
-          <div class="header_inner">
-              <div class="logo">
-                  <img src="./assets/images/ROBO.SCHOOL.svg" alt="">
-              </div>
-              <nav class="nav">
-                  <ul class="nav_list nav_list-active">
-                      <li class="nav_list-item">
-                          <a href="#about" class="nav_list-link">О школе</a>
-                      </li>
-                      <li class="nav_list-item">
-                          <a href="#" class="nav_list-link">Тренеры</a>
-                      </li>
-                      <li class="nav_list-item">
-                          <a href="#" class="nav_list-link">Стоимость</a>
-                      </li>
-              </nav>
-              <div class="burger">
-                  <span></span>
-              </div>
-              <div class="tel">
-                  <a href="tel:+78000001122">+7 800 000 11 22</a>
-              </div>
-          </div>
-      </div>
-  </header>
-    <!-- <div id="header"></div> -->
-    <div id="hero"></div>
-    <div id="about"></div>
-    <div id="profit"></div>
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">
+                    <img src="./assets/images/ROBO.SCHOOL.svg" alt="">
+                </div>
+                <nav class="nav">
+                    <ul class="nav_list nav_list-active">
+                        <li class="nav_list-item">
+                            <a href="#about" class="nav_list-link">О школе</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Тренеры</a>
+                        </li>
+                        <li class="nav_list-item">
+                            <a href="#" class="nav_list-link">Стоимость</a>
+                        </li>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="tel">
+                    <a href="tel:+78000001122">+7 800 000 11 22</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- hero start -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero_inner">
+                <div class="left">
+                    <h2 class="hero_title">ROBO SCHOOL</h2>
+                    <p class="hero_subtitle">Курсы повышения квалификации по робототехнике <br> для педагогов начальной
+                        школы</p>
+                    <a href="#" class="btn">Записаться на курс</a>
+                </div>
+                <div class="right">
+                    <img src="./assets/images/hero-img.png" alt="photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero end -->
+    <!-- about start -->
+    <section class="about">
+        <div class="custom-container">
+            <p class="about_descr">
+                <strong>Robo School</strong> - учреждение для формирования кадрового <br> педагогического резерва в
+                сфере робототехники <br> и программирования
+            </p>
+            <div class="about_counter">
+                <ul class="about_counter-list">
+                    <li class="about_counter-item">
+                        <p class="about_counter-item-title">10</p>
+                        <p class="about_counter-item-descr">УМК по различным направлениям по робототехнике</p>
+                    </li>
+                    <li class="about_counter-item">
+                        <p class="about_counter-item-title">20</p>
+                        <p class="about_counter-item-descr">Школ, в которых запущена робототехника</p>
+                    </li>
+                    <li class="about_counter-item">
+                        <p class="about_counter-item-title">100</p>
+                        <p class="about_counter-item-descr">Педагогов прошедших курсы повышения квалификации</p>
+                    </li>
+                    <li class="about_counter-item">
+                        <p class="about_counter-item-title">10000</p>
+                        <p class="about_counter-item-descr">Обученных детей на базе собственных центров</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+    <!-- profit start -->
+    <section class="profit">
+        <div class="custom-container">
+            <p class="profit_descr">
+                <strong>Что вы получите после курса</strong>
+            </p>
+            <div class="profit_blocks">
+                <ul class="profit_blocks-list">
+                    <li class="profit_blocks-item">
+                        <p class="profit_blocks-item-title">Удостоверение</p>
+                        <p class="profit_blocks-item-descr">Дающее право преподавать робототехнику для детей 6-12 лет в
+                            образовательных учреждениях</p>
+                    </li>
+                    <li class="profit_blocks-item">
+                        <p class="profit_blocks-item-title">Знания</p>
+                        <p class="profit_blocks-item-descr">По основам разработки учебно-методических комплексов
+                            по робототехнике и программированию</p>
+                    </li>
+                    <li class="profit_blocks-item">
+                        <p class="profit_blocks-item-title">Практику</p>
+                        <p class="profit_blocks-item-descr">Возможность пройти практику по преподаванию робототехники на
+                            базе R:ED LAB (в оффлайн или онлайн формате)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- profit end -->
+    <!-- trainers start -->
+    <section class="trainers">
+        <div class="custom-container">
+            <h2 class="trainers__title">Профессиональные тренеры</h2>
+            <div class="wrapper">
+                <div class="swiper trainers__slider">
+                    <div class="swiper-wrapper trainers__slider-wrapper">
+                        <div class="swiper-slide trainers__slider-slide">
+                            <div class="trainers__slider-image">
+                                <img src="./assets/images/slide1.jpg" alt="1">
+                            </div>
+                            <div class="trainers__slider-text">
+                                <p class="trainers__slider-text--name">Ирина Лайм</p>
+                                <p class="trainers__slider-text--job">преподаватель по робототехнике</p>
+                                <a href="#" class="trainers__slider-text--more">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide trainers__slider-slide">
+                            <div class="trainers__slider-image">
+                                <img src="./assets/images/slide2.jpg" alt="2">
+                            </div>
+                            <div class="trainers__slider-text">
+                                <p class="trainers__slider-text--name">Марина Орлова</p>
+                                <p class="trainers__slider-text--job">преподаватель по робототехнике</p>
+                                <a href="#" class="trainers__slider-text--more">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide trainers__slider-slide">
+                            <div class="trainers__slider-image">
+                                <img src="./assets/images/slide3.jpg" alt="3">
+                            </div>
+                            <div class="trainers__slider-text">
+                                <p class="trainers__slider-text--name">Максим Петров</p>
+                                <p class="trainers__slider-text--job">преподаватель по программированию</p>
+                                <a href="#" class="trainers__slider-text--more">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide trainers__slider-slide">
+                            <div class="trainers__slider-image">
+                                <img src="./assets/images/slide4.jpg" alt="4">
+                            </div>
+                            <div class="trainers__slider-text">
+                                <p class="trainers__slider-text--name">Константин Назаров</p>
+                                <p class="trainers__slider-text--job">преподаватель по робототехнике</p>
+                                <a href="#" class="trainers__slider-text--more">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide trainers__slider-slide">
+                            <div class="trainers__slider-image">
+                                <img src="./assets/images/slide5.jpg" alt="5">
+                            </div>
+                            <div class="trainers__slider-text">
+                                <p class="trainers__slider-text--name">Лиза Весенняя</p>
+                                <p class="trainers__slider-text--job">преподаватель по программированию</p>
+                                <a href="#" class="trainers__slider-text--more">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainers__slider-nav">
+                        <div class="swiper-scrollbar"></div>
+                        <div class="trainers__slider-btn--wrapper">
+                            <img class="trainers__slider-prev" src="./assets/images/prev.png" alt="1">
+                            <img class="trainers__slider-next" src="./assets/images/next.png" alt="2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
