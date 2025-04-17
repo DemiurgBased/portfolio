@@ -80,6 +80,9 @@
     }
     @include mobile {
       width: 310px;
+      @media (max-height: 770px) {
+        display: none;
+      }
     }
 }
 

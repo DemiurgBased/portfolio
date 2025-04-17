@@ -1,0 +1,111 @@
+.price {
+    margin-top: 100px;
+    margin-bottom: 100px !important;
+    
+    &__title {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 140%;
+        color: var(--black);
+        margin-bottom: 60px;
+        @include tablet {
+            text-align: center;
+            font-size: 34px;
+        }
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    justify-self: center;
+    @include tablet {
+        width: 720px;
+    }
+    @include small-tablet {
+        width: 500px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    @include small-mobile {
+        width: 300px;
+    }
+
+    &__item {
+        font-weight: 600;
+        line-height: 160%;
+        text-align: center;
+        color: var(--black);
+        width: 273px;
+        height: 380px;
+        border-radius: 20px;
+        border: 1px solid #b4b4b4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.3s;
+        @include tablet {
+            width: 230px;
+        }
+        @include small-tablet {
+            width: 400px;
+        }
+        @include small-mobile {
+            width: 300px;
+        }
+        &-title {
+            font-size: 28px;
+            margin: 40px;
+        }
+        &-price {
+            font-size: 44px;
+        }
+        &-descr {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: 400;
+            color: var(--black);
+            opacity: 0.7;
+            &--pro {
+                color: var(--white);
+                opacity: 1;
+            }
+            @include small-tablet {
+                font-size: 20px;
+            }
+        }
+        &-btn {
+            font-size: 16px;
+            margin: 40px;
+            line-height: 120%;
+            padding: 20px 40px;
+            font-weight: 400;
+            @include tablet {
+                margin: 10px;
+            }
+            @include small-tablet {
+                margin: 20px;
+            }
+        }
+        &--pro {
+            background-color: var(--black);
+            color: var(--white);
+        }
+        &--pro {
+            background-color: var(--black);
+            color: var(--white);
+        }
+    }
+}
+
+.cards__item:hover {
+    box-shadow: 5px 5px 5px #0000004b;
+    transform: translatey(-10px);
+}
+.cards__item--pro:hover {
+    box-shadow: 7px 7px 7px #0000004b;
+}
