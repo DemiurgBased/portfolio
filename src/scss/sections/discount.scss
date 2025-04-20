@@ -1,0 +1,80 @@
+.discount {
+    color: var(--white);
+    min-height: 360px;
+    background-image: url(../assets/images/bg-discount.jpg);
+    background-position-y: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        gap: 144px;
+        @include tablet {
+            gap: 100px;
+        }
+        @include small-tablet {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        &--title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 130%;
+            margin-bottom: 20px;
+            @include tablet {
+                line-height: 120%;
+                margin-bottom: 15px;
+                font-size: 28px;
+            }
+            @include small-mobile {
+                font-size: 24px;
+            }
+        }
+        &--descr {
+            font-size: 18px;
+            line-height: 130%;
+        }
+        @include small-mobile {
+            font-size: 16px;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        &-item {
+            height: 50px;
+            width: 400px;
+            border-radius: 10px;
+            font-size: 16px;
+            @include tablet {
+                height: 45px;
+                width: 360px;
+            }
+            @include mobile {
+                height: 40px;
+                width: 320px;
+            }
+            @include small-mobile {
+                font-size: 14px;
+                height: 37px;
+                width: 300px;
+            }
+        }
+        &-item::placeholder {
+            padding: 10px;
+        }
+        &-submit {
+            background: var(--black);
+            color: var(--white);
+            height: 45px;
+        }
+    }
+}
