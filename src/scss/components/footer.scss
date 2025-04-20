@@ -1,0 +1,27 @@
+.footer {
+    background: var(--black);
+    color: var(--white);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__right {
+        display: flex;
+        align-items: start;
+    }
+    &__logo {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 160%;
+        color: var(--white);
+        text-transform: uppercase;
+    }
+}
