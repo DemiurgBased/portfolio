@@ -10,12 +10,24 @@
     &__left {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: start;
     }
     &__right {
         display: flex;
         align-items: start;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 160%;
+        @include small-tablet {
+            font-size: 24px;
+        }
+        @include mobile {
+            font-size: 20px;
+        }
+        @include small-mobile {
+            font-size: 16px;
+        }
+
     }
     &__logo {
         font-weight: 700;
@@ -23,5 +35,29 @@
         line-height: 160%;
         color: var(--white);
         text-transform: uppercase;
+        @include small-tablet {
+            font-size: 24px;
+        }
+        @include mobile {
+            font-size: 20px;
+        }
+        @include small-mobile {
+            font-size: 16px;
+        }
+    }
+    &__copyright {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--white);
+        opacity: 0.7;
+        text-align: center;
+        @include small-tablet {
+            font-size: 14px;
+            line-height: 130%;
+        }
+        @include small-mobile {
+            font-size: 12px;
+        }
     }
 }
